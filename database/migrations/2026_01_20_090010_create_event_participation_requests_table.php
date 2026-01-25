@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        if (Schema::hasTable('event_participation_requests')) {
+            return;
+        }
+
+        Schema::create('event_participation_requests', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('event_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->string('requested_role')->comment('ORGANIZER, VOLUNTEER, ATTENDEE');
+            $table->string('status')->comment('PENDING, APPROVED, REJECTED');
+            $table->timestamp('requested_at');
+            $table->timestamp('responded_at')->nullable();
+            $table->foreignId('responded_by')->nullable()->constrained('users')->nullOnDelete();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('event_participation_requests');
+    }
+};
+
+
+
+
+

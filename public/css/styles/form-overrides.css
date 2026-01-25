@@ -1,0 +1,299 @@
+/* Form Controls Override - Bootstrap + Theme Integration */
+
+/* Base form control styles - Override Bootstrap defaults */
+.form-control,
+.form-select,
+textarea.form-control {
+  /* Reset Bootstrap styles */
+  background-image: none !important;
+  background-clip: padding-box !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  
+  /* Unified styling */
+  display: block !important;
+  width: 100% !important;
+  padding: 0.75rem 1rem !important;
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  border-radius: 0.5rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+/* Light theme styles */
+[data-theme="light"] .form-control,
+[data-theme="light"] .form-select,
+[data-theme="light"] textarea.form-control {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border: 2px solid rgb(222, 226, 230) !important;
+  caret-color: #000000 !important;
+}
+
+[data-theme="light"] .form-control::placeholder,
+[data-theme="light"] .form-select::placeholder,
+[data-theme="light"] textarea.form-control::placeholder {
+  color: #6b7280 !important;
+  opacity: 1 !important;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] textarea.form-control {
+  background-color: #334155 !important;
+  color: #ffffff !important;
+  border: 2px solid #475569 !important;
+  caret-color: #ffffff !important;
+}
+
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .form-select::placeholder,
+[data-theme="dark"] textarea.form-control::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Focus states - Both themes */
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+  outline: 0 !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25) !important;
+}
+
+/* Disabled states */
+.form-control:disabled,
+.form-select:disabled,
+textarea.form-control:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+[data-theme="light"] .form-control:disabled,
+[data-theme="light"] .form-select:disabled,
+[data-theme="light"] textarea.form-control:disabled {
+  background-color: #f8fafc !important;
+  color: #64748b !important;
+}
+
+[data-theme="dark"] .form-control:disabled,
+[data-theme="dark"] .form-select:disabled,
+[data-theme="dark"] textarea.form-control:disabled {
+  background-color: #1e293b !important;
+  color: #64748b !important;
+}
+
+/* Select dropdown arrow override */
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.75rem center !important;
+  background-size: 16px 12px !important;
+  padding-right: 2.5rem !important;
+}
+
+[data-theme="dark"] .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e") !important;
+}
+
+/* Remove browser autofill styles */
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Textarea specific */
+textarea.form-control {
+  resize: vertical !important;
+  min-height: 100px !important;
+}
+
+/* Input group compatibility */
+.input-group .form-control,
+.input-group .form-select {
+  position: relative !important;
+  flex: 1 1 auto !important;
+}
+
+.input-group .form-control:not(:first-child),
+.input-group .form-select:not(:first-child) {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.input-group .form-control:not(:last-child),
+.input-group .form-select:not(:last-child) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .events-filters .col-md-3 {
+    flex: 1 0 auto !important;
+    width: 25% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .blogs-filters .col-md-3 {
+    flex-basis: 75%;
+  }
+}
+
+/* Card title static height and button positioning */
+.blogs .card-title ,
+.event .card-title {
+  height: 3rem !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+.blogs .card-body,
+.event .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.blogs .card-body .d-flex.gap-2.flex-column,
+.blogs .card-body .d-flex.gap-2,
+.event .card-body .d-flex.gap-2.flex-column,
+.event .card-body .d-flex.gap-2 {
+  margin-top: auto !important;
+}
+
+/* Badge spacing override */
+.blogs .card-body .mb-2,
+.event .card-body .mb-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+/* Blog card button responsive layout */
+@media (max-width: 768px) {
+  .blogs .card-body .d-flex.gap-2,
+  .event .card-body .d-flex.gap-2 {
+    flex-direction: column !important;
+  }
+  .blogs .card-body .flex-grow-1,
+  .event .card-body .flex-grow-1 {
+    width: 100% !important;
+  }
+  .col-lg-4,
+  .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Form check label dark mode */
+[data-theme="dark"] .form-check-label {
+  color: #fff !important;
+}
+
+/* Success button gradient override */
+.btn-success {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  border: none !important;
+  color: white !important;
+}
+
+/* Rank card text color in light mode */
+[data-theme="light"] .card-body small,
+[data-theme="light"] .card-body h3 {
+  color: #fff !important;
+}
+
+/* Table dark mode fixes */
+[data-theme="dark"] .table th {
+    color : #fff;
+}
+
+[data-theme="dark"] .table td {
+  color: #fff !important;
+  border-color: var(--border-primary) !important;
+  background-color : var(--bg-primary-subtle)
+}
+
+[data-theme="dark"] .table td small,
+[data-theme="dark"] .table td .small {
+  color: #f8fafc !important;
+}
+
+[data-theme="light"] .table td small,
+[data-theme="light"] .table td .small {
+  color: #0f172a !important;
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* List group dark mode fixes */
+[data-theme="dark"] .list-group-item {
+  background-color: var(--bg-secondary) !important;
+  color: #fff !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .list-group-item strong {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .list-group-item:hover {
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Dashboard headings dark mode */
+[data-theme="dark"] h5,
+[data-theme="dark"] strong {
+  color: #fff !important;
+}
+
+/* Supervisor pending approvals */
+[data-theme="dark"] .pendingEvent,
+[data-theme="dark"] .pendingBlog {
+    background-color : #1e293b;
+}
+
+/* Warning alert dark mode */
+[data-theme="dark"] .alert-warning strong {
+  color: var(--bs-warning-text-emphasis) !important;
+}
+
+[data-theme="dark"] .btn-link:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Navbar responsive alignment for notifications and user profile */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown {
+    align-self: flex-start !important;
+  }
+}
+
+/* Password requirements styling */
+[data-theme="light"] .form-text {
+  color: #000 !important;
+}
+
+[data-theme="light"] .form-text strong {
+  color: #000 !important;
+}
+
+[data-theme="light"] .form-text li {
+  color: #000 !important;
+}
+
+[data-theme="light"] .point .card-body h3 {
+  color : #000 !important;
+}

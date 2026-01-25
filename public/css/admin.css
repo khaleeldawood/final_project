@@ -1,0 +1,8 @@
+.admin-users-table th,
+.admin-users-table td {
+    vertical-align: middle;
+}
+
+.admin-users-table .badge {
+    font-size: 0.85em;
+}
