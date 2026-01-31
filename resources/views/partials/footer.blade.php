@@ -3,7 +3,7 @@
     <div class="row footer-content">
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="footer-brand">
-          <h5 class="footer-logo">?? UniHub</h5>
+          <h5 class="footer-logo"><i class="bi bi-mortarboard-fill"></i> UniHub</h5>
           <p class="footer-description">
             Empowering university communities through engagement, collaboration, and growth.
           </p>
@@ -42,7 +42,8 @@
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Twitter">
             <i class="bi bi-twitter-x"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+            title="Instagram">
             <i class="bi bi-instagram"></i>
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
@@ -54,7 +55,8 @@
     <div class="row footer-bottom">
       <div class="col text-center">
         <p class="copyright-text">
-          ? 2025 UniHub. All rights reserved. Built with ?? for university communities.
+          © 2025 UniHub. All rights reserved. Built with <i class="bi bi-heart-fill text-danger"></i> for university
+          communities.
         </p>
       </div>
     </div>

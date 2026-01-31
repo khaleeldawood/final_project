@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${storedUser ? `<div class="progress"><div class="progress-bar bg-${earned ? 'success' : 'primary'}" role="progressbar" style="width:${progressValue}%;">${progressValue}%</div></div>` : ''}
           </div>
           <div class="text-center">
-            ${earned ? '<span class="badge bg-success px-3 py-2">ƒ?? Earned</span>' : '<span class="badge bg-secondary px-3 py-2">ñ??? Locked</span>'}
+            ${earned ? '<span class="badge bg-success px-3 py-2">Earned</span>' : '<span class="badge bg-secondary px-3 py-2">Locked</span>'}
           </div>
         </div>
       </div>

@@ -37,11 +37,8 @@
 
 
 
-        <div class="text-center">
-          <a href="/forgot-password" class="text-decoration-none">?? Forgot password?</a>
-          <div class="mt-3">
-            <a href="/register" class="text-decoration-none">Don't have an account? Register here</a>
-          </div>
+        <div class="text-center mt-3">
+          <a href="/register" class="text-decoration-none">Don't have an account? Register here</a>
         </div>
       </div>
     </div>

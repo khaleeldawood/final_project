@@ -13,13 +13,7 @@ Route::get('/register', function () {
     return view('auth.register');
 });
 
-Route::get('/forgot-password', function () {
-    return view('auth.forgot-password');
-});
 
-Route::get('/reset-password', function () {
-    return view('auth.reset-password');
-});
 
 
 

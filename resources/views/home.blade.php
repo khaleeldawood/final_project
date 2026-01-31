@@ -33,15 +33,15 @@
         <div class="col-lg-6 hero-image-container">
           <div class="hero-image-wrapper">
             <div class="floating-card card-1">
-              <div class="card-icon">??</div>
+              <div class="card-icon"><i class="bi bi-calendar-event"></i></div>
               <div class="card-text">200+ Events</div>
             </div>
             <div class="floating-card card-2">
-              <div class="card-icon">??</div>
+              <div class="card-icon"><i class="bi bi-trophy"></i></div>
               <div class="card-text">Top Contributors</div>
             </div>
             <div class="floating-card card-3">
-              <div class="card-icon">??</div>
+              <div class="card-icon"><i class="bi bi-lightbulb"></i></div>
               <div class="card-text">Share Ideas</div>
             </div>
             <div class="hero-illustration">
@@ -49,7 +49,7 @@
               <div class="illustration-circle circle-2"></div>
               <div class="illustration-circle circle-3"></div>
               <div class="illustration-center">
-                <span class="center-emoji">??</span>
+                <span class="center-emoji"><i class="bi bi-mortarboard-fill"></i></span>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card feature-card" style="animation-delay: 0ms;">
             <div class="card-body text-center">
-              <div class="feature-icon">??</div>
+              <div class="feature-icon"><i class="bi bi-calendar-check"></i></div>
               <div class="feature-title">Events & Activities</div>
               <div class="feature-description">
                 Create and participate in university events. Earn points as organizer, volunteer, or attendee.
@@ -86,7 +86,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card feature-card" style="animation-delay: 100ms;">
             <div class="card-body text-center">
-              <div class="feature-icon">??</div>
+              <div class="feature-icon"><i class="bi bi-journal-text"></i></div>
               <div class="feature-title">Blogs & Opportunities</div>
               <div class="feature-description">
                 Share articles, internships, and job opportunities with your peers and community.
@@ -97,7 +97,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card feature-card" style="animation-delay: 200ms;">
             <div class="card-body text-center">
-              <div class="feature-icon">??</div>
+              <div class="feature-icon"><i class="bi bi-award"></i></div>
               <div class="feature-title">Points & Badges</div>
               <div class="feature-description">
                 Earn points for contributions and unlock achievement badges as you level up.
@@ -108,7 +108,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="card feature-card" style="animation-delay: 300ms;">
             <div class="card-body text-center">
-              <div class="feature-icon">??</div>
+              <div class="feature-icon"><i class="bi bi-bar-chart"></i></div>
               <div class="feature-title">University Leaderboards</div>
               <div class="feature-description">
                 Compete with peers and see top contributors across different universities.
@@ -131,7 +131,7 @@
       <div class="row g-4">
         <div class="col-md-6">
           <div class="feature-box" style="animation-delay: 0ms;">
-            <div class="feature-box-icon">??</div>
+            <div class="feature-box-icon"><i class="bi bi-calendar4-event"></i></div>
             <h3 class="feature-box-title">Event Management</h3>
             <p class="feature-box-description">
               Create, manage, and participate in university events. Track attendance,
@@ -141,7 +141,7 @@
         </div>
         <div class="col-md-6">
           <div class="feature-box" style="animation-delay: 100ms;">
-            <div class="feature-box-icon">??</div>
+            <div class="feature-box-icon"><i class="bi bi-newspaper"></i></div>
             <h3 class="feature-box-title">Blog & Opportunity Publishing</h3>
             <p class="feature-box-description">
               Share knowledge, post internships, and publish job opportunities.
@@ -151,7 +151,7 @@
         </div>
         <div class="col-md-6">
           <div class="feature-box" style="animation-delay: 200ms;">
-            <div class="feature-box-icon">??</div>
+            <div class="feature-box-icon"><i class="bi bi-gem"></i></div>
             <h3 class="feature-box-title">Gamification System</h3>
             <p class="feature-box-description">
               Engage with a comprehensive points and badges system. Level up,
@@ -161,7 +161,7 @@
         </div>
         <div class="col-md-6">
           <div class="feature-box" style="animation-delay: 300ms;">
-            <div class="feature-box-icon">??</div>
+            <div class="feature-box-icon"><i class="bi bi-speedometer2"></i></div>
             <h3 class="feature-box-title">Role-based Dashboards</h3>
             <p class="feature-box-description">
               Tailored dashboards for students, supervisors, and admins.
